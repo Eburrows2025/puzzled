@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Puzzled</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="screen active" id="lobby-screen">
+      <h1 class="title">Puzzled</h1>
+      <button id="play-button">Play</button>
+    </div>
+    <div class="screen hidden" id="game-screen">
+      <div id="puzzle-container">What 6-letter word is made up of only one letter?</div>
+      <input type="text" id="guess-input" placeholder="Enter your guess"/>
+      <button id="submit-guess">Submit</button>
+      <p id="feedback"></p>
+    </div>
+    <div class="screen hidden" id="stats-screen">
+      <h2>Stats</h2>
+      <p>Streak: <span id="streak">0</span></p>
+      <p>Tries: <span id="tries">0</span></p>
+      <button id="back-button">Back</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
